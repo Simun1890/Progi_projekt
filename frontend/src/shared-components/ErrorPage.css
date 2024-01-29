@@ -1,0 +1,47 @@
+.errorPage__div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+  gap: 2rem;
+}
+
+.errorPage__title {
+  color: var(--grey-dark);
+  font-size: var(--font-size-xlg);
+  text-align: center;
+  padding: 1rem;
+}
+
+.errorPage__logo {
+  padding: 1rem;
+}
+
+.error__text {
+  color: var(--grey-dark);
+  font-size: var(--font-size-md);
+  text-align: center;
+  align-self: center;
+}
+
+/* Large laptops */
+@media (max-width: 1440px) {
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .error__text {
+    font-size: var(--font-size-xsm);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+}

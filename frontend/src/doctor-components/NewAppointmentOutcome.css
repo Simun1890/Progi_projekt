@@ -1,0 +1,200 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.wrapper textarea {
+  resize: none;
+  width: 100%;
+  border: 0.15rem solid var(--grey-normal);
+  border-radius: 0.5rem;
+  transition: none;
+  outline: none;
+}
+
+.wrapper > div > div {
+  width: 100%;
+}
+
+.wrapper input,
+.wrapper select {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: var(--font-size-xsm);
+  font-weight: 300;
+  border: solid 0.15rem var(--grey-normal);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.newAppointmentOutcome__personal,
+.newAppointmentOutcome__symptoms,
+.newAppointmentOutcome__physicalExam,
+.newAppointmentOutcome__diagnosis,
+.newAppointmentOutcome__additional,
+.newAppointmentOutcome__childCertificate,
+.newAppointmentOutcome__parentCertificate {
+  padding-top: 3.5rem;
+}
+
+.newAppointmentOutcome__personal__div {
+  font-size: var(--font-size-xsm);
+}
+
+.newAppointmentOutcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--white);
+  padding: 4rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 50rem;
+}
+
+.wrapper select {
+  width: 100%;
+}
+
+.newAppointmentOutcome__title {
+  font-size: var(--font-size-xlg);
+  color: var(--accent-colour);
+}
+
+.newAppointmentOutcome__hrTitle,
+.newAppointmentOutcome__hr {
+  border: 0.15rem solid var(--accent-colour);
+  border-radius: 5rem;
+  width: 25%;
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.newAppointmentOutcome__hrTitle {
+  margin-bottom: 1.5rem;
+}
+
+.newAppointmentOutcome__label {
+  font-size: var(--font-size-xsm);
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+.newAppointmentOutcome__labelPersonalDark {
+  font-size: var(--font-size-xsm);
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+.newAppointmentOutcome__labelPersonalGray {
+  font-size: var(--font-size-xsm);
+  color: var(--grey-dark);
+  padding-top: 1rem;
+}
+
+.newAppointmentOutcome__labelLarge {
+  font-size: var(--font-size-md);
+  color: var(--black);
+}
+
+.newAppointmentOutcome__horizontalWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.newAppointmentOutcome__verticalWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wrapper input[type="checkbox"] {
+  accent-color: var(--accent-colour);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.newAppointmentOutcome__checkboxLabel {
+  font-size: var(--font-size-xsm);
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.newAppointmentOutcome__certificateDiv {
+  border: 0.15rem solid var(--grey-normal);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: var(--grey-dark);
+}
+
+.newAppointmentOutcome__pRed {
+  color: var(--accent-colour);
+}
+
+.newAppointmentOutcome__button {
+  background-color: var(--accent-colour);
+  color: var(--white);
+  border: 0.15rem solid var(--accent-colour);
+  border-radius: 5rem;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  font-size: var(--font-size-md);
+  font-weight: 300;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.newAppointmentOutcome__button:disabled {
+  background-color: var(--grey-normal);
+  cursor: not-allowed;
+  border: 0.15rem solid var(--grey-normal);
+}
+
+/* Large laptops */
+@media (max-width: 1440px) {
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+  .newAppointmentOutcome {
+    width: 90%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .wrapper input,
+  .wrapper select,
+  .newAppointmentOutcome__label,
+  .newAppointmentOutcome__labelPersonalDark,
+  .newAppointmentOutcome__labelPersonalGray,
+  .newAppointmentOutcome__personal__div,
+  .newAppointmentOutcome__checkboxLabel {
+    font-size: var(--font-size-sm);
+  }
+
+  .newAppointmentOutcome__title {
+    font-size: var(--font-size-lg);
+  }
+
+  .newAppointmentOutcome__button,
+  .newAppointmentOutcome__labelLarge {
+    font-size: var(--font-size-xsm);
+  }
+
+  .newAppointmentOutcome {
+    padding: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+}

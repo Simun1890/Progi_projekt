@@ -1,0 +1,26 @@
+body {
+  padding-left: 7rem;
+  padding-top: 8vh;
+}
+
+/* Large laptops */
+@media (max-width: 1440px) {
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding-left: 0rem;
+  }
+}

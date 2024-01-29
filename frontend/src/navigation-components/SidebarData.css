@@ -1,0 +1,137 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100vh;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 100;
+  font-size: var(--font-size-xsm);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 1rem;
+}
+
+.sidebarClose {
+  width: 7rem;
+}
+
+.sidebarClose p,
+.sidebarClose .sidebar__headerWrapper div {
+  display: none;
+}
+
+.sidebarClose .sidebar__element,
+.sidebarClose .sidebar__logoutWrapper div,
+.sidebarClose .sidebar__headerWrapper {
+  justify-content: center;
+}
+
+.sidebarClose .sidebar__icon {
+  width: 50%;
+  height: 2rem;
+}
+
+.sidebarClose .sidebar__logo {
+  width: 70%;
+}
+
+.sidebar__menuWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__logoutWrapper,
+.sidebar__elementWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  gap: 1rem;
+}
+
+.sidebar__error {
+  color: var(--grey-dark);
+}
+
+.sidebar__logoutWrapper > div,
+.sidebar__elementWrapper > div a {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.sidebar__elementWrapper > div:hover a,
+.sidebar__logoutWrapper > div:hover {
+  background-color: var(--accent-colour);
+}
+
+.sidebar__elementWrapper > div:hover .sidebar__icon,
+.sidebar__elementWrapper > div:hover .sidebar__element,
+.sidebar__logoutWrapper > div:hover .sidebar__element,
+.sidebar__logoutWrapper > div:hover .sidebar__icon {
+  color: var(--white);
+}
+
+.sidebar__element,
+.sidebar__element:visited {
+  color: var(--black);
+}
+
+.sidebar__icon {
+  color: var(--black);
+  width: 10%;
+  height: auto;
+}
+
+.sidebar__headerWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+
+.sidebar__headerWrapper > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__logo {
+  width: 20%;
+  height: auto;
+}
+
+.sidebar__email {
+  font-weight: 500;
+}
+
+/* Large laptops */
+@media (max-width: 1440px) {
+}
+
+/* Small laptops */
+@media (max-width: 1024px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .sidebarClose {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 17rem;
+  }
+}
