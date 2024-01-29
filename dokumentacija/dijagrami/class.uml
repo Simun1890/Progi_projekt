@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Administrator/Desktop/FER/5.semestar/PROGI/ozdravi-g11-t4-main</OriginalElement>
+  <nodes>
+    <node x="-428.5" y="220.8125000000001">com.ozdravi.ozdravig11t4.domain.SpecialAppointments</node>
+    <node x="-76.75" y="850.2500000000002">com.ozdravi.ozdravig11t4.domain.MedicalCertificates</node>
+    <node x="545.875" y="596.25">com.ozdravi.ozdravig11t4.domain.Notifications</node>
+    <node x="253.0625" y="802.2500000000002">com.ozdravi.ozdravig11t4.domain.ChildExaminations</node>
+    <node x="575.875" y="1055.9375">com.ozdravi.ozdravig11t4.domain.VisitHistory</node>
+    <node x="231.0" y="-18.499999999999744">com.ozdravi.ozdravig11t4.domain.Child</node>
+    <node x="-3.125" y="-19.187499999999886">com.ozdravi.ozdravig11t4.domain.User</node>
+    <node x="560.875" y="68.50000000000037">com.ozdravi.ozdravig11t4.domain.ChildRegister</node>
+    <node x="-428.5" y="678.8124999999998">com.ozdravi.ozdravig11t4.domain.TestResults</node>
+    <node x="-427.125" y="-19.187499999999886">com.ozdravi.ozdravig11t4.domain.UserRole</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ozdravi.ozdravig11t4.domain.Child" target="com.ozdravi.ozdravig11t4.domain.User" relationship="TO_ONE">
+      <point x="74.5" y="-2.5579538487363607E-13" />
+      <point x="497.0" y="208.0" />
+      <point x="497.0" y="564.0" />
+      <point x="77.375" y="564.0" />
+      <point x="0.0" y="274.5004999999999" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.ChildRegister" target="com.ozdravi.ozdravig11t4.domain.Child" relationship="TO_ONE">
+      <point x="-82.5" y="-30.00000000000037" />
+      <point x="473.0" y="193.0" />
+      <point x="473.0" y="223.0" />
+      <point x="74.5" y="14.999999999999744" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.SpecialAppointments" target="com.ozdravi.ozdravig11t4.domain.User" relationship="TO_ONE">
+      <point x="0.0" y="154.50049999999987" />
+      <point x="-321.0" y="564.0" />
+      <point x="77.375" y="564.0" />
+      <point x="0.0" y="274.5004999999999" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.ChildExaminations" target="com.ozdravi.ozdravig11t4.domain.Child" relationship="TO_ONE">
+      <point x="97.00049999999999" y="14.999999999999773" />
+      <point x="473.0" y="1019.75" />
+      <point x="473.0" y="223.0" />
+      <point x="74.5" y="14.999999999999744" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.Notifications" target="com.ozdravi.ozdravig11t4.domain.Child" relationship="TO_ONE">
+      <point x="-90.0" y="0.0" />
+      <point x="473.0" y="786.75" />
+      <point x="473.0" y="223.0" />
+      <point x="74.5" y="14.999999999999744" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.MedicalCertificates" target="com.ozdravi.ozdravig11t4.domain.Child" relationship="TO_ONE">
+      <point x="0.0" y="-178.50000000000023" />
+      <point x="23.75" y="738.0" />
+      <point x="473.0" y="738.0" />
+      <point x="473.0" y="223.0" />
+      <point x="74.5" y="14.999999999999744" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.Notifications" target="com.ozdravi.ozdravig11t4.domain.User" relationship="TO_ONE">
+      <point x="0.0" y="-190.5" />
+      <point x="635.875" y="564.0" />
+      <point x="77.375" y="564.0" />
+      <point x="0.0" y="274.5004999999999" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.TestResults" target="com.ozdravi.ozdravig11t4.domain.Child" relationship="TO_ONE">
+      <point x="122.5" y="-348.8124999999998" />
+      <point x="473.0" y="738.0" />
+      <point x="473.0" y="223.0" />
+      <point x="74.5" y="14.999999999999744" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.TestResults" target="com.ozdravi.ozdravig11t4.domain.User" relationship="TO_ONE">
+      <point x="0.0" y="-408.00049999999976" />
+      <point x="-306.0" y="564.0" />
+      <point x="77.375" y="564.0" />
+      <point x="0.0" y="274.5004999999999" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.VisitHistory" target="com.ozdravi.ozdravig11t4.domain.User" relationship="TO_ONE">
+      <point x="-75.0" y="5.000000001018634E-4" />
+      <point x="497.0" y="1186.438" />
+      <point x="497.0" y="564.0" />
+      <point x="77.375" y="564.0" />
+      <point x="0.0" y="274.5004999999999" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.TestResults" target="com.ozdravi.ozdravig11t4.domain.MedicalCertificates" relationship="TO_ONE">
+      <point x="122.5" y="-58.062499999999545" />
+      <point x="-100.5" y="0.0" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.ChildRegister" target="com.ozdravi.ozdravig11t4.domain.User" relationship="TO_ONE">
+      <point x="-82.5" y="-3.694822225952521E-13" />
+      <point x="497.0" y="223.0" />
+      <point x="497.0" y="564.0" />
+      <point x="77.375" y="564.0" />
+      <point x="0.0" y="274.5004999999999" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.ChildExaminations" target="com.ozdravi.ozdravig11t4.domain.User" relationship="TO_ONE">
+      <point x="97.00049999999999" y="-2.2737367544323206E-13" />
+      <point x="497.0" y="1004.75" />
+      <point x="497.0" y="564.0" />
+      <point x="77.375" y="564.0" />
+      <point x="0.0" y="274.5004999999999" />
+    </edge>
+    <edge source="com.ozdravi.ozdravig11t4.domain.User" target="com.ozdravi.ozdravig11t4.domain.UserRole" relationship="TO_ONE">
+      <point x="-80.5" y="-217.5" />
+      <point x="101.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.43973941368078173" showDependencies="true" x="158.49999999999977" y="747.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
